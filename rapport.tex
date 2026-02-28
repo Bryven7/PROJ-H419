@@ -1,0 +1,29 @@
+\begin{document}
+\chapter{Introduction}
+The Problem: Malaria diagnosis usually relies on manual microscopy (a human looking through a microscope). This is slow, labor-intensive, and prone to human error (fatigue, lack of expertise).
+
+The Goal: Automate the detection of parasitized cells to assist doctors, speed up diagnosis, and improve accuracy in resource-poor regions.
+
+Quantity (#): Total of 27,558 cell images.
+
+Quality/Balance: The dataset is perfectly balanced (50% Parasitized, 50% Uninfected), which is excellent for training.
+
+Supervision: This is a Supervised Learning problem (the data is labeled).
+
+Input Data: The images are RGB (color) but vary in resolution/size, meaning preprocessing is required.
+
+\chapter{State of the Art}
+
+Traditional Methods: Historically, people used manual feature extraction (HOG, SIFT) combined with SVM classifiers.
+
+Modern Methods (Deep Learning): The standard solution now is Convolutional Neural Networks (CNNs).
+
+Specific Architectures: Literature shows high success rates using Transfer Learning with models like VGG-16, ResNet50, or DenseNet.
+
+Comparative Analysis: "I want to compare a custom-built lightweight CNN against a heavy Transfer Learning model to see which is more efficient."
+
+Metric Focus: "Most models focus on Accuracy; my goal is to maximize Recall (minimizing False Negatives) because missing a sick patient is dangerous."
+
+Explainability: "I want to not just classify, but use Grad-CAM to show where the parasite is located in the image."
+
+\end{document}
